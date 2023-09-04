@@ -1,0 +1,28 @@
+{
+  "ts-node": {
+    "files": true
+  },
+  "files": ["src/index.ts", "src/bin/generate.ts"],
+  "compilerOptions": {
+    "declaration": true,
+    "inlineSourceMap": true,
+    "noImplicitAny": true,
+    "target": "ES5",
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "downlevelIteration": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["src/*"]
+    }
+  },
+  "include": ["src"]
+}

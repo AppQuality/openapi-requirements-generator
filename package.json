@@ -1,0 +1,24 @@
+{
+  "name": "@appquality/fixture-generator",
+  "version": "1.0.2",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsnd src/index.ts",
+    "build": "tsc --noEmit false",
+    "release": "yarn build && npm version minor --force && npm publish --access public"
+  },
+  "dependencies": {
+    "@readme/openapi-parser": "^2.5.0",
+    "yargs": "^17.7.2"
+  },
+  "bin": {
+    "generate-fixtures": "./dist/bin/generate.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.9",
+    "@types/yargs": "^17.0.24",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2"
+  }
+}
